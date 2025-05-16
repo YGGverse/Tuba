@@ -82,7 +82,7 @@ public class Tuba.EditorPage : ComposerPage {
 		install_editor ();
 		install_overlay (status.status);
 		install_visibility (status.visibility);
-		install_languages (status.language);
+		install_languages ("uk"); // enforce my locale https://codeberg.org/grunfink/snac2/issues/388 @TODO
 
 		if (supports_mime_types)
 			install_content_type_button (settings.default_content_type);
