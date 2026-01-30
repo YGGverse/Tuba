@@ -308,7 +308,7 @@ public class Tuba.Dialogs.Preferences : Adw.PreferencesDialog {
 		);
 		default_language_combo_row.model = app.app_locales.list_store;
 
-		var default_language = settings.default_language == "" ? "en" : settings.default_language;
+		var default_language = settings.default_language == "" ? "uk" : settings.default_language;
 		uint default_lang_index;
 		if (
 			app.app_locales.list_store.find_with_equal_func (
